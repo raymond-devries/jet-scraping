@@ -11,6 +11,8 @@ class JetsSpider(scrapy.Spider):
         rows = table.xpath("//tr")
         for row in rows[1:]:
             table_values = row.css("td::text").getall()
+            if len(table_values) == 0:
+                continue
             yield {
                 "link": row.css("a::attr(href)").get(),
                 "name": row.css("a::text").get(),
