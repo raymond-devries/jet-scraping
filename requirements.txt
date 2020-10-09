@@ -1,3 +1,4 @@
 pandas
 scrapy
 beautifulsoup4
+seaborn
