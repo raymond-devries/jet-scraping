@@ -3,3 +3,4 @@ numpy
 scrapy
 beautifulsoup4
 seaborn
+python-slugify
